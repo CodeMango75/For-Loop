@@ -66,3 +66,20 @@ age = [25,27,27,29]
 course = ["AI","DS","ML","DL"]
 for name,age,course in zip(name,age,course):
   print(f"""Hello Dear {name}, Welcome to your {course} course, you are {age} years old""")          
+
+
+ # Input Form
+users = ['a','b','c']
+password = ['1','2','3']
+
+ui = input("UserName:\t")
+pi = input("Password:\t")
+
+for u,p in zip(users,password):
+    if ui == u and pi == p:
+        print(f"Welcome Dear {u}!")
+        break
+        
+else:
+    print("Not Valid user name password!")
+    
